@@ -1,0 +1,464 @@
+
+<!-- 10.1.23  @11:52PM-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+
+    h3 {
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+
+    h4 {
+      padding-left: 10px;
+    }
+
+
+
+
+      li {
+        margin: 30px;
+      }
+
+
+      .re-size{
+        /*
+        if picture doesn't automatically fit use this class
+        */
+
+        width: 100%;
+
+      }
+
+
+      /**
+
+        class 'exmaple'           = make border
+        h1  class'tittles space'  = chapter number
+        h3                        = title
+        h4                        = smaller tittle on the left side
+
+      */
+
+
+
+
+    </style>
+
+    <body>
+
+
+
+<!-- 1.0 -->
+
+    <div class="example">
+      <br>
+      <p class="caution"> * Not mobile friendly yet * </p>
+      <br>
+      <br>
+    <h1 class="tittles space">Network Devices</h1>
+
+    <h2 class="tittles space">Network Devices Part 1</h2>
+
+    <h3>Host</h3>
+
+    <li>
+          <br><br>
+
+          <b>Host</b> are any device which <i>sends</i> or
+          <i>receive</i> traffic.
+          (Examples : Computers, Phones, smart TVs, smart watches, etc)
+
+          <br><br>
+
+          Host typically fall in two categories <i>clients</i> or
+          <i>servers</i>. <b>Clients</b> initiate request <b>servers</b>
+          respond. These terms are relative to specific communication.
+          (A <i><b>server</b></i> is a computer with software installed
+           which responds to specific request)
+
+    </li>
+
+    <h3>IP Address</h3>
+
+    <li>
+
+          An <b>IP Address</b> is the identity of each host.
+          An <i>IP address</i> is needed to send or
+          receieve <i>packets</i> on a network.
+          <i>IP addresses</i> get stamped on everything
+          that each <i>host</i> sends.
+
+          <br><br>
+          <img src="img/exp18.png" alt="example" class="re-size">
+          <br><br>
+
+          For example when a client makes a web request to <i>site.com</i>, it
+          sends a <b>packet</b> which includes <i>what web page it is asking for</i>, as
+          well as a <i>source ip address</i>, and a <i>destination ip addresses</i>.
+
+          <br><br>
+
+          The <b>source ip address</b> is going to be the client's ip address,
+          and the <b>destination ip address</b> is going to be the server's ip
+          address.
+
+          <br><br>
+
+          <i>IP addresses</i> are typically assigned in some sort
+          of hierachy.
+
+          <br><br>
+          <img src="img/exp19.png" alt="example" class="re-size">
+          <br><br>
+
+    </li>
+
+    <h3>Network</h3>
+
+    <li>
+
+      A <b>network</b> is what actually does the transportation of
+      traffic between hosts. In it's simplest form anytime you connect
+      two hosts you have a <i>network</i>.
+
+      <br><br>
+
+      Before networks in order to transfer data between hosts required
+      portable media (disks, thumb drives, etc...).
+
+      <br><br>
+
+      A network is really just a logical grouping of hosts which
+      require similar connectivity. Networks can contain other
+      networks which is reffered to as <b>Sub-Networks</b> (<b>Subnets</b>).
+
+      <br><br>
+
+      Instead of having networks connect directly to each
+      other in every possible combination, networks are connected
+      to a central resource, the <b>internet</b> which is simply
+      a bunch of <i>interconnected networks</i>, networks connected
+      to other networks.
+
+    </li>
+      
+    <h2 class="tittles space">Network Devices Part 2</h2>
+
+      <h3>Repeater?</h3>
+      <li><b>Repeaters</b> regenerate signals</li>
+      
+      <h3>Hub</h3>
+      <li><b>Hubs</b> are multiport repeaters.</li>
+      
+      <h3>Bridge</h3>
+      <li><b>Bridges</b> sit between <i>HUB</i> connected hosts.</li>
+      
+      <h3>Switch</h3>
+      <li>A <b>switch</b> facilitates communication <i>within</i> a
+      network.</li>
+      
+      <h3>Routers</h3>
+      <li>A <b>switch</b> facilitates communication <i>between</i> a
+      networks.</li>
+      
+      <h3>Gateway</h3>
+      <li>A <b>gateway</b> is each hosts way out of their network.</li>
+
+    </div>
+
+    <div class="example">
+    <h1 class="tittles space">OSI model</h1>
+
+    <h3>Intro</h3>
+
+    <li>
+
+          The purpose of <i>networking</i> is to allow
+          two hosts to share data with one another.
+          <i>Networking</i> allows us to automate all this
+          across the wire. <i>Hosts</i> must follow a set of rules
+          in order to achive this.
+          <i>Networking</i> also has its own set of rules, the rules
+          for networking are divided into seven different layers
+          known as the <b>OSI model</b>.
+
+      <br><br>
+
+      <mark>OSI is simply a model, NOT RIGID.</mark>
+
+          <br><br>
+
+        <img src="img/exp2.gif" alt="example" class="re-size">
+        <br><br>
+
+      1) Physical ; <mark>Transporting bits</mark> ; Cables, Wifi, Repeaters, & Hubs
+      <br>
+      2) Data Link ; <mark>Hop to hop</mark> ; NIC, MAC Address, Routers, Switch
+      <br>
+      3) Network ; <mark>End to end</mark> ; IP Address 
+      <br>
+      4) Transport ; <mark>Service to Service</mark> ; 
+         Two common address schemes to distinguish dates streams
+         are <b>TCP</b> & <b>UDP</b> which are <b>ports</b>.
+
+         <i>TCP</i> favors reliability. <i>UDP</i> favots efficiency.
+        Port #s range from 0-65535. 
+
+        <br><br> 
+
+        Servers listen for request to pre-defined <i>ports</i>.
+        Clients make request to the IP address & to the port # in question.
+        Clients also select a random <b>source port</b> for each 
+        connection. 
+
+        <br><br> 
+
+        When a packet is initially send from a client it 
+        includes a <b>Source</b> (<b>SRC</b>) & <b>Destination</b> (<b>DST</b>)
+        
+          <br><br>
+          <img src="img/exp22.png" alt="example" class="re-size">
+          <br><br>
+          
+          ??This process occurs for each connection made the client 
+          the client. In each case the client is searching a new 
+          random source port. 
+
+          <br><br>
+
+          <i>Ports</i> ensure that the right application gets the 
+          right data. THis process also allows the client to make 
+          multiple connections to the sme server. 
+          (exp : when client/browser opens a new tab, a new random 
+          source port is created.)
+
+          <br><br> 
+
+          ?<b>Encapsulation</b>
+          <br><br>
+          ?The construct of a L2 header & its ensuing data is known
+          as a <b>frame</b>. 
+          
+    </li>
+    
+    <h3>Physical Layer</h3>
+    
+    <li>
+    
+    </li>
+
+    </div>
+
+          <div class="example">
+    <h1 class="tittles space">Everything Hosts do to speak on the Internet Pt1</h1>
+          </div>
+
+                <div class="example">
+    <h1 class="tittles space">Everything Switches do to speak on the Internet Pt1</h1>
+          </div>
+
+
+                <div class="example">
+    <h1 class="tittles space">Everything Routers do to speak on the Internet Pt1</h1>
+                  <h3>Intro</h3>
+                  
+                <li>
+
+                        <br><br>
+                        .xxx (IP address)
+                        <br>
+                        .xxx (MAC address)
+                        <br><br>
+                        <img src="img/exp25.png" alt="example" class="re-size">
+                        <br><br>  
+
+
+                        <i>Switches</i> facilitates communication within a network(review).
+                        A <b>node</b> is a device the implements IP.
+                        A <b>router</b> is a <i>node</i> that forwards <i>IP packets</i> not
+                        explicitly to itself.
+                        A <b>host</b> is any <i>node</i> that is not a router.
+
+                        <br><br> 
+                  
+                        A router forwards packets not destined to themselves.
+                        Routers are <i>connected</i> to a network by having 
+                        an IP & MAC address on <i>each interface</i> (<i>network</i>).
+                        To do this routers must have a <b>routing table</b> corrilating
+                        to each route in <i>each network</i>. 
+                        Each route has its own routing table. 
+
+                        <br><br>
+
+                                    
+                        Routers use the routing tables to send <i>packets</i>.
+                        <i>Routing tables</i> can be populated via 3 methods ;
+                        <i>Directly Connected</i>, <i>Static Routes</i>, 
+                        & <i>Dynamic Routers</i>. 
+
+                        <br><br>
+
+                        <b>Directly connected</b> are routes for the Network which are
+                        attached. 
+                        When routes receive packets with an unknown <i>destination IP</i>, 
+                        packet is dropped. 
+
+                        <br><br>
+                        <img src="img/exp27.png" alt="example" class="re-size">
+                        <br><br>
+
+                        <b>Static routes</b> are routes manually 
+                        provided by an <i>administrator</i>.
+
+
+                        <br><br>
+                        <img src="img/exp26.png" alt="example" class="re-size">
+                        <br><br>
+             
+
+                </li>
+                </div>
+      
+                <div class="example">
+                <h1 class="tittles space">Everything Routers do to speak on the Internet Pt2</h1>
+
+                  <h3>Intro</h3>
+
+                  <li>
+
+                          <b>ARP</b> is the mapping of known IP address to unknown
+                          MAC address. 
+                          Routers have <b>ARP Tables</b>, mapping of <i>L3</i> to <i>L2</i> address.
+                          (Everying with an <i>IP address</i> has an <i>ARP Table</i>)
+
+                        <br><br>
+                        <img src="img/exp23.png" alt="example" class="re-size">
+                        <br><br>
+
+                        ARP Tables start empty & get populated dynamically 
+                        as needed with network traffic.
+
+                  
+                    
+                  </li>
+
+                  <h3>How packets are sent? (HostA -> HostC)</h3>
+
+                  <li>
+                    
+                  </li>
+
+                  <h3>How hosts respond (HostC -> HostA)</h3>
+
+                  <li>
+                
+                  </li>
+
+                
+                </div>
+                <div class="example">
+                <h1 class="tittles space">Routing Hierachies & Route Summary</h1>
+
+                <h3>Intro</h3>
+
+                <li>
+
+                  Routers are typically connected in a hierachy. 
+                  Hierachy routers are easier to scale and allow 
+                  for <b>route summarization</b>
+
+                  <br><br>
+                  <img src="img/exp28.png" alt="example" class="re-size">
+                  <br><br>
+                  <img src="img/exp29.png" alt="example" class="re-size">
+
+
+                </li>
+
+                <h3>Subnetting</h3>
+
+                <li>
+
+                    ...
+                  
+                    <br><br> 
+                  
+                    A <b>default route</b> is the ultimate route. 
+
+                    <br><br>
+                    <img src="img/exp30.png" alt="example" class="re-size">
+                    <br><br>
+
+                    
+
+                </li>
+
+                </div>
+
+      
+                <div class="example">
+                <h1 class="tittles space">Network Protocols</h1>
+
+                <h3>Intro</h3>
+
+                  <li>
+                    A <b>protocol</b> is a set of ules and messages that form an Internet standard. 
+                    
+                  </li>
+                
+                </div>
+
+      
+                <div class="example">
+                <h1 class="tittles space">How Data moves through the Internet</h1>
+
+                <h3>Intro</h3>
+
+                  <li>
+
+                  </li>
+                
+                </div>
+
+                 <div class="example">
+                <h1 class="tittles space">TCP & UDP</h1>
+
+                <h3>Intro</h3>
+
+                  <li>
+
+                  </li>
+                
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
